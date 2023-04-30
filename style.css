@@ -1,0 +1,57 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+.proposal-off {
+    display: none;
+}
+
+.proposal-on {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.proposal-text {
+    opacity: 0;
+    color: white;
+    text-align: center;
+}
+
+.proposal-text:hover {
+    cursor: pointer;
+}
+
+/* desktop devices */
+@media (min-width: 950px) {
+    #game {
+        width: 50%;
+        height: 50%;
+        border: 1px solid black;
+        position: absolute;
+        right: 25%;
+        top: 25%;
+    }
+
+    .proposal-text {
+        font-size: 10em;
+    }
+}
+
+/* mobile devices */
+@media (max-width: 950px) {
+    #game {
+        width: 100%;
+        height: 100%;
+        border: 1px solid black;
+        position: absolute;
+    }
+
+    .proposal-text {
+        font-size: 3em;
+    }
+}
